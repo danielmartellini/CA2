@@ -29,25 +29,53 @@ index 0000000..69d4178
 +    
 +    public static void main(String[] args) {
 +        
-+        int number1,number2,result;
-+                                
++       
++ int number1,number2;
++       String operation = "";
++       
 +        Scanner input = new Scanner(System.in);
 +        
 +        System.out.println("Insert first number");
 +        
 +        number1 = input.nextInt();
 +        
++        System.out.print("Select an operation +,-,*,/");
++        
++        operation = input.next();
++        
++        
 +        System.out.println("Insert second number");
 +        
 +        number2 = input.nextInt();
++           
++        if (operation.equals("+")){
++        System.out.println("The sum result is:"+" "+(number1+number2));
++            
++    }
++        if (operation.equals("-")){
++        System.out.println("The subtraction result is:"+" "+(number1-number2));
++         
++  }
++ }
++   
++
++                                
++     
++        
++        
++        
++        
++        
++        
++        
++       
 +                
-+       input.close();
 +       
-+       result = number1+number2;
 +       
-+       System.out.printf("%d + %d = %d",number1,number2,result);
-
-
++       
++       
++     
++
 +       
 +       
 +       
