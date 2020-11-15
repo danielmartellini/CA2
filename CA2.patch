@@ -56,6 +56,10 @@ index 0000000..69d4178
 +        System.out.println("The subtraction result is:"+" "+(number1-number2));
 +         
 +  }
+        if (operation.equals("*")){
+
+            System.out.println("The multiplication result is:"+ " " + (number1 * number2))
+        }
 + }
 +   
 +
