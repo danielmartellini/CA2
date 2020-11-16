@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.company;
+package CA2Code.src.com.company;
 
 import java.util.Scanner;
 
@@ -50,7 +50,8 @@ public class Calculator {
 
                  break;
              default:
-                 System.out.println("operation invalid");
+                 System.out.println("operation invalid:" +
+                         number1+operation+number2);
          }
            
 
