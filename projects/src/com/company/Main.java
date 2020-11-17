@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int number1, number2;
+        float number1, number2;
         String operation;
         System.out.println("Insert first number");
         number1 = getNumber();
