@@ -20,24 +20,10 @@ public class Main {
         System.out.println("Insert second number");
         number2 = getNumber();
 
+        showResult(number1,number2,operation);
 
-        switch (operation){
-            case "+":
-                System.out.println("The sum result is:"+" "+(number1+number2));
-                break;
-            case "-" :
-                System.out.println("The subtraction result is:"+" "+(number1-number2));
-                break;
-            case "/" :
-                System.out.println("The division result is:"+" "+(number1/number2));
-                break;
-            case "*" :
-                System.out.println("The multiplication result is:"+" "+(number1*number2));
-                break;
-            default:
-                System.out.println("operation invalid:" +
-                        number1+operation+number2);
-        }
+
+
 
 
     }
@@ -49,6 +35,27 @@ public class Main {
     public static String getOperation(){
         Scanner input = new Scanner(System.in);
         return input.nextLine();}
+
+    public static void showResult(float a,float b,String sign){
+        switch (sign){
+        case "+":
+            System.out.println("The sum result is:"+" "+(a+b));
+            break;
+        case "-" :
+            System.out.println("The subtraction result is:"+" "+(a-b));
+            break;
+        case "/" :
+            System.out.println("The division result is:"+" "+(a/b));
+            break;
+        case "*" :
+            System.out.println("The multiplication result is:"+" "+(a*b));
+            break;
+        default:
+            System.out.println("operation invalid:" +
+                    a+sign+b);
+    }
+
+    }
 
 
 }
