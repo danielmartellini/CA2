@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package CA2Code.src.com.company;
+package CA2Code.src.com.company.Calculator;
 
 import java.util.Scanner;
 
