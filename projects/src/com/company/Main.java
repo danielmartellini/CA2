@@ -28,9 +28,9 @@ public class Main {
 
     }
 
-    public static int getNumber() {
+    public static float getNumber() {
         Scanner input = new Scanner(System.in);
-        return input.nextInt(); }
+        return input.nextFloat(); }
 
     public static String getOperation(){
         Scanner input = new Scanner(System.in);
