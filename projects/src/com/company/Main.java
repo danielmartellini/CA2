@@ -8,17 +8,11 @@ public class Main {
 
         float number1, number2;
         String operation;
-        System.out.println("Insert first number");
-        number1 = getNumber();
-        System.out.println("Select an operation +,-,*,/");
-        operation = getOperation();
 
-        while (!operation.matches("[*+/-]")) {
-            System.out.println("Select an operation +,-,*,/");
-            operation = getOperation(); }
-
-        System.out.println("Insert second number");
-        number2 = getNumber();
+        number1 = getNumber("Insert first number");
+        operation = getOperation("Select an operation +,-,*,/");
+        checkOperation(operation);
+        number2 = getNumber("Insert second number");
 
         showResult(number1,number2,operation);
 
@@ -28,15 +22,29 @@ public class Main {
 
     }
 
-    public static float getNumber() {
+
+
+    public static float getNumber(String prompt) {
+        //@author:Daniel Martellini, Gabriel A.
+        System.out.println(prompt);
         Scanner input = new Scanner(System.in);
         return input.nextFloat(); }
 
-    public static String getOperation(){
+    public static String getOperation(String prompt){
+        //@author: Daniel Martellini
+        System.out.println(prompt);
         Scanner input = new Scanner(System.in);
         return input.nextLine();}
 
+    public static void checkOperation(String sign){
+        //@author:Daniel Martellini
+        while (!sign.matches("[*+/-]")) {
+            sign = getOperation("Select an operation +,-,*,/"); }
+    }
+
+
     public static void showResult(float a,float b,String sign){
+        //@author: Daniel Martellini
         switch (sign){
         case "+":
             System.out.println("The sum result is:"+" "+(a+b));
