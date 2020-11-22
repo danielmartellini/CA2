@@ -59,8 +59,7 @@ public class Main {
             System.out.println("The multiplication result is:"+" "+(a*b));
             break;
         default:
-            System.out.println("operation invalid:" +
-                    a+sign+b);
+            System.out.println("operation invalid:" +a+sign+b);
     }
 
     }
