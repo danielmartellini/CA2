@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
+try{
         float number1, number2;
         String operation;
 
@@ -16,7 +16,9 @@ public class Main {
 
         showResult(number1,number2,operation);
 
-
+}catch(Exception e){
+System.out.println("Please Insert Numbers Only!")
+}
 
 
 
