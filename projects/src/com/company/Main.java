@@ -24,10 +24,7 @@ try{
     }
 }while(!valid);
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> 03c83578601f16bd3f9226b5f011bbc37ff542ea
 
     public static float sum(float n1, float n2){
         //@Leandro
