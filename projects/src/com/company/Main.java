@@ -27,7 +27,7 @@ try{
 
 
     public static float sum(float n1, float n2){
-        //@Leandro
+        //@Leandro Padilha do Carmo
         return n1+n2;
     }
     public static float subtraction(float n1, float n2){
@@ -39,7 +39,7 @@ try{
         return n1*n2;
     }
     public static float division(float n1, float n2){
-        //@Leandro
+        //@Leandro Padilha do Carmo
         return n1/n2;
     }
     public static float getNumber(String prompt) {
