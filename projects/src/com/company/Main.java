@@ -5,28 +5,24 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-try{
+
+        boolean valid = false;
         float number1, number2;
         String operation;
-
+        do{
+try{
         number1 = getNumber("Insert first number");
         operation = getOperation("Select an operation +,-,*,/");
         checkOperation(operation);
+       do{ 
         number2 = getNumber("Insert second number");
+        valid = true;
         showResult(number1,number2,operation);
-
-}catch(Exception e){
-System.out.println("Please Insert Numbers Only!");
-}
-        /*
-         *Authour: Gabriel Antoniolli
-         * Imput Validation
-         */
-
-
-
+       }while(!valid);
+        } catch (Exception e) {
+        //System.out.println("Please, Insert Only Numbers!");
     }
-
+}while(!valid);
 
 
     public static float sum(float n1, float n2){
