@@ -14,19 +14,17 @@ try{
         checkOperation(operation);
         number2 = getNumber("Insert second number");
         showResult(number1,number2,operation);
-<<<<<<< HEAD
-=======
 
 }catch(Exception e){
-System.out.println("Please Insert Numbers Only!")
+System.out.println("Please Insert Numbers Only!");
 }
-        /**
+        /*
          *Authour: Gabriel Antoniolli
          * Imput Validation
          */
 
 
->>>>>>> 0b638e5940867a6c7a60818958a02af682ea1194
+
     }
 
 
