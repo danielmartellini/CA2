@@ -31,11 +31,11 @@ try{
         return n1+n2;
     }
     public static float subtraction(float n1, float n2){
-        //@Jeff
+        //@Jefferson de Oliveira Lima
         return n1-n2;
     }
     public static float multiplication(float n1, float n2){
-        //@Jeff
+        //@Jefferson de Oliveira Lima
         return n1*n2;
     }
     public static float division(float n1, float n2){
