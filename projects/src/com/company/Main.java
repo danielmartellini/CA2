@@ -15,15 +15,15 @@ try{
         number1 = getNumber("Insert first number");
         operation = getOperation("Select an operation +,-,*,/");
         checkOperation(operation);
-       do{ 
-        number2 = getNumber("Insert second number");
-        valid = true;
-        showResult(number1,number2,operation);
-       }while(!valid);
-        } catch (Exception e) {
-        //System.out.println("Please, Insert Only Numbers!");
+    number2 = getNumber("Insert second number");
+    valid = true;
+    showResult(number1,number2,operation);
+} catch (Exception e) {
+        System.out.println("Please, Insert Only Numbers!");
+        System.out.println("Please, Start again.");
     }
 }while(!valid);
+    }
 
 
     public static float sum(float n1, float n2){
