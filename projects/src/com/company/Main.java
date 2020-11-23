@@ -24,7 +24,7 @@ try{
         //System.out.println("Please, Insert Only Numbers!");
     }
 }while(!valid);
-
+    }
 
     public static float sum(float n1, float n2){
         //@Leandro
