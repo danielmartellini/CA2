@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
+//Author: Gabriel Antoniolli
+// validation System.
         boolean valid = false;
         float number1, number2;
         String operation;
